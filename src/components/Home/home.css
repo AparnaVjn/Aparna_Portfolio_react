@@ -1,0 +1,139 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background: url("../../assets/background.jpg") no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  color: white;
+  padding: 0 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.content-section {
+  max-width: 50%;
+}
+
+.profile-name {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.profile-role {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #00ff88;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition for hover effect */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Slightly increase the size */
+  color: #00ff88; /* Change the color on hover */
+}
+
+.image-section {
+  max-width: 40%;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .image-section {
+    order: -1; /* Moves the image section above the text */
+    max-width: 60%; /* Adjusts the image size */
+    margin-bottom: 20px; /* Adds some spacing between the image and the name */
+  }
+
+  .content-section {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-role {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-section {
+    max-width: 80%;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .profile-role {
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+  }
+}

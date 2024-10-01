@@ -1,0 +1,139 @@
+.about {
+  padding: 60px 30px;
+  margin: 10px;
+  background-color: black;
+  min-height: 85vh; /* Minimum height adjusted for responsiveness */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #777;
+}
+
+.aboutme {
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  text-align: start;
+}
+
+.about-me .content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #237523;
+}
+
+.about-me .content p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.about-me .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-me ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.about-me ul li i {
+  font-size: 20px;
+  color: rgb(35, 117, 35);
+  margin-right: 10px;
+}
+
+.about-me ul li strong {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.about-me ul li span {
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .about {
+    padding: 40px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .about-me .content h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me ul li {
+    font-size: 14px;
+  }
+
+  .about {
+    padding: 30px 10px;
+  }
+
+  .about-me .content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .about-me .content h3 {
+    font-size: 20px;
+  }
+
+  .aboutme {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about {
+    padding: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 20px;
+  }
+
+  .about-me .content p,
+  .about-me ul li {
+    font-size: 12px;
+  }
+}

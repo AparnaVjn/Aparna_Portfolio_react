@@ -1,0 +1,114 @@
+.skills-section {
+  padding: 60px 30px;
+  margin: 20px 20px;
+  background-color: black;
+  min-height: 85vh; /* Ensures a minimum height on smaller screens */
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff; /* Use white for better visibility */
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for larger screens */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+  }
+  
+  .skills-title {
+    font-size: 1.8rem; /* Slightly smaller title */
+  }
+  
+  .skill-box {
+    padding: 15px;
+    height: 90px;
+  }
+  
+  .skill-box i {
+    font-size: 2rem; /* Adjust icon size */
+  }
+  
+  .skill-box p {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
+
+/* Responsive adjustments for extra-small screens */
+@media (max-width: 576px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Single column for extra-small screens */
+  }
+  
+  .skill-box {
+    padding: 10px;
+    height: auto;
+  }
+  
+  .skills-title {
+    font-size: 1.5rem; /* Smaller title for extra-small screens */
+  }
+  
+  .skill-box i {
+    font-size: 1.8rem; /* Further adjust icon size */
+  }
+  
+  .skill-box p {
+    font-size: 0.9rem; /* Further adjust text size */
+  }
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100px;
+}
+
+.skill-box i {
+  font-size: 2.5rem;
+  color: #00b894; /* Icon color */
+}
+
+.skill-box p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Hover effect */
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,120 @@
+/* Contact Section Styles */
+.contact {
+    padding: 60px 0;
+    margin: 10px 10px;
+    background: black;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    color: #555;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .info-box {
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .info-box i {
+    font-size: 36px;
+    color: #237523;
+    margin-bottom: 10px;
+  }
+  
+  .info-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #777;
+    line-height: 1;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin-right: 10px;
+  }
+  
+  .social-links a:hover {
+    background: black;
+    color: #fff;
+  }
+  
+  .php-email-form .form-control {
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .php-email-form .form-control:focus {
+    border-color: #237523;
+    box-shadow: none;
+  }
+  
+  .php-email-form button[type="submit"] {
+    background: #237523;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .php-email-form button[type="submit"]:hover {
+    background: #ff4d4d;
+  }
+  
+  .loading {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .sent-message {
+    display: none;
+    color: green;
+    font-size: 14px;
+    text-align: center;
+  }
+  
