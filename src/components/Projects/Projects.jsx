@@ -27,8 +27,7 @@ export const Projects = () => {
       client: 'self project',
       date: 'june, 2024',
       url: 'https://www.example.com',
-      description: "
-It is an online platform designed to help individuals meet and connect with others for romantic relationships, friendships, or casual encounters. Users typically create profiles with personal details, interests, and preferences, which are then used by the website's algorithms to match them with compatible people. Features often include messaging, and various filters for narrowing down matches based on factors like location, qualification and designation.",
+      description: "It is an online platform designed to help individuals meet and connect with others for romantic relationships, friendships, or casual encounters. Users typically create profiles with personal details, interests, and preferences, which are then used by the website's algorithms to match them with compatible people. Features often include messaging, and various filters for narrowing down matches based on factors like location, qualification and designation.",
     },
     {
       id: 3,
